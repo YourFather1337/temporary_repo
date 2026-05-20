@@ -14,6 +14,10 @@ def gadget():
     g_list = Mobile.query.all()
     return render_template('mobile.html', mobiles=g_list)
 
+@app.route('/test')
+def test():
+    pass
+
 if __name__ =='__main__':
     app.run(debug=True)
 
